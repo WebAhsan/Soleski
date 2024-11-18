@@ -1,0 +1,36 @@
+.sol_success-area{
+    background:$green-color;
+    position: relative;
+    z-index: 999;
+     &::after{
+        content:"";
+        background: url('/assets/img/success/overlay.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      
+    }
+    .sol_success-num{
+        text-align: center;
+        .success_num{
+             @include stroke-text(80px,2px,$white);
+        }
+        p{
+            font-size: 20px;
+            font-weight: 500;
+            color: $white;
+            margin-top: 10px;
+        }
+    }
+    .sucess_video{
+        background: url('/assets/img/success/video-bg.png');
+        height: 270px;
+        background-size: cover;
+        width: 100%;
+            text-align: center;
+    line-height: 270px;
+
+    }
+}

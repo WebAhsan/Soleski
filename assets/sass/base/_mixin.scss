@@ -1,0 +1,131 @@
+@use "sass:math";
+
+
+// Stroke Text 
+
+@mixin stroke-text($font-size: 88px, $stroke-width: 1px, $stroke-color: black, $fill-color: transparent) {
+    font-size: $font-size;
+    color: $fill-color;
+    -webkit-text-stroke: $stroke-width $stroke-color;
+}
+
+
+
+// Position 
+
+@mixin position($position, $left: null, $top: null, $right: null, $bottom: null) {
+    position: $position;
+
+    @if $left !=null {
+        left: $left;
+    }
+
+    @if $right !=null {
+        right: $right;
+    }
+
+    @if $top !=null {
+        top: $top;
+    }
+
+    @if $bottom !=null {
+        bottom: $bottom;
+    }
+}
+
+// Button
+
+@mixin button($background, $color, $border-color) {
+    background: $background;
+    color: $color;
+    padding: 17px 30px;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    font-family: $title-font;
+    border-radius: 100px;
+    text-transform: capitalize;
+    font-weight: 400;
+    border: 1px solid $border-color;
+}
+
+// Responsive Query
+@mixin hd {
+
+    /* Hight Resoulation devices */
+    @media (min-width: #{$hd + 1}) {
+        @content;
+    }
+}
+
+@mixin xxxl {
+
+    /* Extra large devices */
+    @media (max-width: #{$xxxl}) {
+        @content;
+    }
+}
+
+@mixin xxl {
+
+    /* Extra large devices */
+    @media (max-width: #{$xxl}) {
+        @content;
+    }
+}
+
+@mixin ml {
+
+    /* Medium Large devices */
+    @media (max-width: #{$ml}) {
+        @content;
+    }
+}
+
+@mixin xl {
+
+    /* Medium Large devices */
+    @media (max-width: #{$xl}) {
+        @content;
+    }
+}
+
+@mixin lg {
+
+    /* Large devices */
+    @media (max-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin md {
+
+    /* Medium devices */
+    @media (max-width: #{$md}) {
+        @content;
+    }
+}
+
+@mixin sm {
+
+    /* Small devices */
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin xs {
+
+    /* Extra small devices */
+    @media (max-width: #{$xs}) {
+        @content;
+    }
+}
+
+@mixin vxs {
+
+    /* Extra small devices */
+    @media (max-width: #{$vxs}) {
+        @content;
+    }
+}

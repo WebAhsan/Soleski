@@ -1,0 +1,239 @@
+/*** Offcanvas Code ***/
+
+.cs-offcanvas-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  width: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  opacity: 0;
+  visibility: hidden;
+
+  &.cs-body-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .cs-offcanvas-content {
+    width: 100%;
+    max-width: 420px;
+    background-color: $body-color;
+    border-left: 3px solid $theme-color;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    z-index: 1;
+    right: -350px;
+
+    @include lg {
+      padding: 40px 0px;
+      width: 360px;
+    }
+
+
+    &.open-menu {
+      right: 0;
+    }
+
+
+    @include xs {
+      max-width: 320px;
+    }
+
+    @include vxs {
+      max-width: 300px;
+    }
+
+    .mobile-menu-top {
+      padding: 0px 30px;
+
+      .cs-close-toggle {
+        background: $theme-color;
+        color: $white-color;
+        width: 35px;
+        height: 35px;
+        border-radius: 100px;
+
+      }
+    }
+
+    .cs-mobile-menu {
+      overflow-y: scroll;
+      max-height: calc(100vh - 200px);
+
+      >ul {
+        padding: 0px 30px;
+
+        >li {
+          border-bottom: 1px solid $gray-color;
+          padding: 10px 0px;
+
+          >a {
+            font-weight: 600;
+
+            .cs-menu-expand {
+
+              &:after,
+              &:before {
+                content: "\f067";
+                font-family: $icon-font;
+                width: 22px;
+                height: 22px;
+                line-height: 22px;
+                display: inline-block;
+                background: $white-color;
+                text-align: center;
+                font-size: 12px;
+                border-radius: 50px;
+                float: right;
+                margin-top: 1px;
+
+              }
+
+              &:before {
+                content: "\f068";
+                display: none;
+              }
+            }
+
+          }
+
+          .sub-menu {
+            padding: 15px;
+            display: none;
+
+            >li {
+              padding: 10px;
+              border-bottom: 1px solid $gray-color;
+
+              &:last-child {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+
+      .cs-mobile-item-children.cs-active>a .cs-menu-expand:after {
+        display: none;
+      }
+
+      .cs-mobile-item-children.cs-active>a .cs-menu-expand:before {
+        display: inline-block;
+      }
+
+      .menu-active{
+        color:$theme-color;
+      }
+    }
+  }
+
+  .cs-dekstop-top {
+    background: $theme-color2;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+
+    .cs-dekstop-close {
+      background: $white-color;
+      color: $theme-color2;
+      width: 35px;
+      height: 35px;
+      border-radius: 100px;
+      left: -18px;
+      top: 35%;
+      position: absolute;
+    }
+  }
+
+}
+  .instagram-gallery {
+    padding: 25px;
+    .popup-image{
+      position: relative;
+      height: 100%;
+      display: block;
+      &:before {
+        content: "";
+        background: $theme-color2;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        border-radius: 5px;
+      }
+
+      &:hover {
+        &:before {
+          opacity: 0.5;
+          visibility: visible;
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+        }
+
+        i {
+          position: absolute;
+          left: 40%;
+          line-height: 100px;
+          color: $white-color;
+          opacity: 1;
+          visibility: visible;
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+      }
+
+        img {
+          height: 100px;
+          -o-object-fit: cover;
+          object-fit: cover;
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        i {
+          position: absolute;
+          left: 40%;
+          line-height: 100px;
+          color: $white-color;
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+
+        }
+    }
+
+  
+  }

@@ -1,0 +1,442 @@
+/*** Header Code ***/
+
+.cs-header {
+    background: $body-color;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    .menu-area{
+        position: relative;
+    }
+    .main-menu {
+  
+        ul {
+            li {
+                display: inline-block;
+                padding-right: 22px;
+
+                &:last-child {
+                    padding-right: 0px;
+                }
+
+                a {
+                    font-size: 15px;
+                    line-height: 15px;
+                    font-weight: 600;
+                    display: block;
+                    padding: 40px 0px;
+                    font-family: $body-font;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+
+                }
+
+                &:hover {
+                    .sub-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        z-index: 1;
+                        -webkit-transform: scaleY(1);
+                        -ms-transform: scaleY(1);
+                        transform: scaleY(1);
+                        -webkit-transition: all 0.4s ease 0s;
+                        -o-transition: all 0.4s ease 0s;
+                        transition: all 0.4s ease 0s;
+                    }
+                }
+            }
+            .menu-active{
+                color:$theme-color;
+            }
+        }
+
+        .menu-item-has-children {
+            position: relative;
+
+            a {
+                position: relative;
+
+                &:after {
+                    content: "\f107";
+                    position: relative;
+                    font-family: $icon-font;
+                    top: 0px;
+                    margin-left: 5px;
+                    font-size: 10px;
+                }
+
+            }
+
+            .sub-menu {
+                position: absolute;
+                background: $body-color;
+                width: 200px;
+                padding: 18px 20px;
+                left: -18px;
+                opacity: 0;
+                visibility: hidden;
+                z-index: -1;
+                -webkit-transform: scaleY(0);
+                -ms-transform: scaleY(0);
+                transform: scaleY(0);
+                -webkit-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+                -webkit-transform-origin: top center;
+                -ms-transform-origin: top center;
+                transform-origin: top center;
+
+                li {
+                    padding-right: 0px;
+                    display: block;
+                    padding-bottom: 10px;
+
+                    &:last-child {
+                        padding-bottom: 0px;
+                    }
+
+                    a {
+                        padding: 0px;
+                        line-height: 30px;
+                        position: relative;
+                        padding-left: 0px;
+
+                        &:before {
+                            content: "\f564";
+                            position: absolute;
+                            top: 8px;
+                            left: 0;
+                            font-family: $icon-font;
+                            width: 11px;
+                            height: 11px;
+                            text-align: center;
+                            border-radius: 50%;
+                            display: inline-block;
+                            font-size: 15px;
+                            line-height: 1;
+                            color: $theme-color;
+                            font-weight: 500;
+                            opacity: 0;
+                            z-index: -1;
+                            visibility: hidden
+                        }
+
+                        &:after {
+                            display: none;
+                        }
+
+                        &:hover {
+                            -webkit-transform: translateX(10px);
+                            -ms-transform: translateX(10px);
+                            transform: translateX(10px);
+                            padding-left: 20px;
+
+                            &:before {
+                                opacity: 1;
+                                z-index: 1;
+                                visibility: visible
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .cs-header-cart {
+        i {
+            background: $white-color;
+            border-radius: 100px;
+            padding: 10px;
+            color: $theme-color;
+            font-size: 25px;
+        }
+    }
+
+    .cs-header-pipe {
+        padding: 0;
+
+        i {
+            font-size: 50px;
+            color: $gray-color
+        }
+    }
+
+    .cs-header-search {
+        @include ml {
+            display: none;
+        }
+
+        i {
+            color: $title-color;
+            font-size: 20px;
+        }
+    }
+
+    .cs-header-toggle {
+        @include ml {
+            display: none;
+        }
+
+        i {
+            padding: 10px;
+            color: $title-color;
+            font-size: 30px;
+        }
+    }
+
+    .cs-menu-toggle {
+        i {
+            padding: 10px;
+            color: $white-color;
+            font-size: 25px;
+            background: $theme-color;
+            border-radius: 100px;
+            padding: 12px;
+        }
+    }
+
+
+    .header-icons {
+        gap: 15px;
+        
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        background: $body-color;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
+        -webkit-transition: all ease 0.4s;
+        -o-transition: all ease 0.4s;
+        transition: all ease 0.4s;
+        -webkit-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
+        animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
+        
+        .openCart{
+             opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+        }
+    }
+}
+
+
+// Header Template 02
+
+.header-layout02 {
+    position: relative;
+    background: $light-gray;
+
+    @include lg {
+        padding: 50px 0;
+        background: $theme-color2;
+    }
+
+    @include sm {
+        padding: 40px 0px;
+    }
+
+    @include vxs {
+        padding: 35px 0px;
+    }
+
+    .sticky {
+        
+        .header-logo {
+            padding: 0 32px;
+        }
+
+    }
+
+    .header-logo {
+        background: $theme-color2;
+        height: 100%;
+        position: absolute;
+        z-index: 9;
+        padding: 54px 32px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        @include lg {
+            top: 0;
+            padding: 50px 20px;
+        }
+
+        @include sm {
+            padding: 40px 10px;
+        }
+
+        @include vxs {
+            padding: 35px 10px;
+            text-align: center;
+
+            img {
+                width: 90%;
+            }
+        }
+
+
+    }
+
+
+    @include lg {
+
+        .sticky {
+            padding: 50px 0;
+            background: $theme-color2;
+        }
+
+
+        .cs-menu-toggle {
+            position: absolute;
+            right: 0;
+            padding: 0;
+
+            i {
+
+                color: $white-color;
+                font-size: 50px;
+                line-height: 0px;
+                background: transparent;
+                border-radius: 0px;
+                background: $theme-color2;
+                height: 100%;
+                z-index: 9;
+                padding: 50px 35px;
+                cursor: pointer;
+
+                @include sm {
+                    font-size: 40px;
+                    padding: 40px 25px;
+                }
+
+                @include vxs {
+                    font-size: 35px;
+                    padding: 35px 15px;
+                }
+            }
+        }
+
+
+    }
+
+    @include sm {
+        .sticky {
+            padding: 40px 0;
+
+        }
+    }
+
+    @include vxs {
+        .sticky {
+            padding: 35px 0;
+
+        }
+    }
+
+    .main-menu {
+        @include xxxl {
+            padding-left: 130px;
+        }
+
+        @include xxl {
+            padding-left: 200px;
+        }
+
+        @include ml {
+            padding-left: 220px;
+        }
+    }
+
+
+    .header-top {
+        background: $title-color;
+        padding: 12px 0px;
+
+
+        .cs-header-infos {
+            @include xxxl {
+                padding-left: 130px;
+            }
+
+            @include xxl {
+                padding-left: 200px;
+            }
+
+            @include ml {
+                padding-left: 220px;
+            }
+
+            >ul {
+                >li {
+                    display: inline-block;
+                    padding-right: 30px;
+
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+
+                    >a {
+                        color: $white-color;
+                    }
+                    
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .cs-header-social {
+            text-align: right;
+
+            @include ml {
+                display: none;
+            }
+
+            >ul {
+                >li {
+                    display: inline-block;
+                    padding-right: 25px;
+
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+
+                    >a {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-area {
+        background: $light-gray;
+        position: relative;
+
+    }
+
+    .cs-header-cart {
+        i {
+            background: transparent;
+            color: $title-color;
+            font-size: 25px;
+        }
+    }
+    .menu-active{
+        color:$theme-color2;
+    }
+}

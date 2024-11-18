@@ -1,0 +1,212 @@
+/*
+Template Name: CookBite
+Description: Modern restaurant HTML template with elegant design and interactive features for showcasing menus and services.
+Author: softcrafty
+Version: 1.0.0
+*/
+
+
+
+/*=================================
+    CSS Index
+==================================*/
+/*
+01. Theme Base
+    1.1. Mixin                  (Mixins for reusable styles)
+    1.2. Function               (Functions for calculations and operations)
+    1.3. Variable               (Global variables for the theme)
+    1.4. Typography             (Global typography styles)
+    1.7. Wordpress Default      (WordPress default styles)
+
+02. Reset
+    2.1. Container              (Container styles)
+    2.2. Grid                   (Grid system)
+    2.3. Input                  (Input fields styling)
+    2.4. Slider                 (Slider component styling)
+    2.5. Mobile Menu            (Mobile menu styling)
+
+03. Utilities
+    3.1. Preloader              (Preloader styles)
+    3.2. Buttons                (Button styles)
+    3.3. Titles                 (Title styles)
+    3.6. Font                   (Font styles)
+    3.7. Background             (Background styles)
+    3.10. Animation             (Animation styles)
+
+04. Template Style
+    4.2. Header                 (Header styles)
+    4.3. Footer                 (Footer styles)
+
+05. Spacing
+    5.1. Spacing                (Spacing utilities)
+
+06. Sections
+    6.1. Banner                 (Banner section)
+    6.2. Category               (Category section)
+    6.3. Client Logo            (Client logo section)
+    6.4. About Us               (About Us section)
+    6.5. CTA                    (Call to Action section)
+    6.6. Best Selling           (Best Selling section)
+    6.7. Food Menu              (Food Menu section)
+    6.8. Video Popup            (Video Popup section)
+    6.9. Blog                   (Blog section)
+    7.0. Newsletter             (Newsletter section)
+    7.1. Testimonial            (Testimonial section)
+    7.2. Gallery                (Gallery section)
+    7.3. Mini Contact           (Mini Contact section)
+    7.4. Food Category          (Food Category section)
+    7.5. FAQ                    (FAQ section)
+    7.6. Counter                (Counter section)
+    7.7. Work Process           (Work Process section)
+    7.8. Best Offer             (Best Offer section)
+    7.9. Download Button        (Download Button section)
+    8.0. Popular                (Popular section)
+    8.1. Product                (Product section)
+    8.2. Product Sidebar        (Product Sidebar section)
+    8.3. Shop Details           (Shop Details section)
+    8.4. Cart                   (Cart section)
+    8.5. Wishlist               (Wishlist section)
+    8.6. My Account             (My Account section)
+    8.7. Contact Form           (Contact Form section)
+    8.8. Popup Search           (Popup Search section)
+    8.9. Back to Top            (Back to Top section)
+*/
+
+/*=================================
+   01. Theme Base
+==================================*/
+@import 'base/mixin'; // 1.1
+
+@import 'base/function'; // 1.2
+
+@import 'base/variable'; // 1.3
+
+@import 'base/typography'; // 1.4
+
+// @import 'base/wpdefault';   // 1.7 - Uncomment if WordPress default styles are needed
+
+/*=================================
+    02. Reset
+==================================*/
+@import 'reset/container'; // 2.1
+
+@import 'reset/grid'; // 2.2
+
+@import 'reset/input'; // 2.3
+
+@import 'reset/offcanvas'; // 2.4 - Adjust the name if necessary
+
+@import 'reset/slider'; // 2.5
+
+/*=================================
+    03. Utilities
+==================================*/
+@import 'utilities/preloader'; // 3.1
+
+@import 'utilities/btns'; // 3.2
+
+@import 'utilities/titles'; // 3.3
+
+@import 'utilities/font'; // 3.6
+
+@import 'utilities/background'; // 3.7
+
+@import 'utilities/animation'; // 3.10
+
+/*=================================
+    04. Template Style
+==================================*/
+@import 'template/headers/header'; // 4.2
+
+@import 'template/footers/footer'; // 4.3
+
+/*=================================
+    05. Spacing
+==================================*/
+@import 'spacing/spacing'; // 5.1
+
+/*=================================
+    06. Sections
+==================================*/
+@import 'template/sections/heading'; // 6.1
+
+@import 'template/sections/service'; // 6.1
+@import 'template/sections/about'; // 6.1
+@import 'template/sections/sucess'; // 6.1
+@import 'template/sections/why'; // 6.1
+@import 'template/sections/marquee'; // 6.1
+@import 'template/sections/work-step'; // 6.1
+
+// @import 'template/sections/hero'; // 6.1
+
+// @import 'template/sections/banner'; // 6.1
+
+// @import 'template/sections/category'; // 6.2
+
+// @import 'template/sections/clientlogo'; // 6.3
+
+// @import 'template/sections/about'; // 6.4
+
+// @import 'template/sections/offer'; // 6.4
+
+// @import 'template/sections/cta'; // 6.5
+
+// @import 'template/sections/best-selling'; // 6.6
+
+// @import 'template/sections/food-menu'; // 6.7
+
+// @import 'template/sections/video-popup'; // 6.8
+
+// @import 'template/sections/blog'; // 6.9
+
+// @import 'template/sections/blog-details'; // 6.9
+
+// @import 'template/sections/comment'; // 6.9
+
+// @import 'template/sections/booking'; // 6.9
+
+// @import 'template/sections/newsletter'; // 7.0
+
+// @import 'template/sections/testimonail'; // 7.0 - Note: check spelling, it might be 'testimonial'
+
+// @import 'template/sections/gallery'; // 7.0
+
+// @import 'template/sections/mini-contact'; // 7.0
+
+// @import 'template/sections/food-category'; // 7.0
+
+// @import 'template/sections/faq'; // 7.0
+
+// @import 'template/sections/counter'; // 7.0
+
+// @import 'template/sections/work-process'; // 7.0
+
+// @import 'template/sections/best-offer'; // 7.0
+
+// @import 'template/sections/download-btn'; // 7.0
+
+// @import 'template/sections/popular'; // 7.0
+
+// @import 'template/sections/product'; // 7.0
+
+// @import 'template/sections/product-sidebar'; // 7.0
+
+// @import 'template/sections/shop-details'; // 7.0
+
+// @import 'template/sections/cart'; // 7.0
+
+// @import 'template/sections/wishlist'; // 7.0
+
+// @import 'template/sections/my-account'; // 7.0
+
+// @import 'template/sections/contact-form'; // 7.0
+
+// @import 'template/sections/popup-search'; // 7.0
+
+// @import 'template/sections/backtotop'; // 7.0
+
+// @import 'template/sections/minicart'; // 7.0
+
+// @import 'template/sections/review-list'; // 7.0
+
+// @import 'template/sections/widget-sidebar'; // 7.0

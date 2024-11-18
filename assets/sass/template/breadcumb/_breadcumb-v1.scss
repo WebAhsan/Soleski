@@ -1,0 +1,105 @@
+// .breadcumb-content {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     @include sm {
+//         display: block;
+
+//         .breadcumb-menu {
+//             margin-top: 16px;  
+//         }
+//     }
+// }
+
+// .breadcumb-menu {
+//     max-width: 100%;
+//     padding: 0;
+//     margin: 0px 0 -0.5em 0;
+//     list-style-type: none;
+//     position: relative;
+
+//     li {
+//         display: inline-block;
+//         margin-right: 3px;
+//         padding-right: 3px;
+//         list-style: none;
+//         position: relative;
+
+//         &:after {
+//             content: "/";
+//             position: relative;
+//             margin-left: 6px;
+//             font-weight: 500;
+//             font-size: 15px;
+//             color: inherit;
+//             font-family: $icon-font;
+//         }
+
+//         &:last-child {
+//             padding-right: 0;
+//             margin-right: 0;
+//             color: #DFE5F0;
+
+//             &:after {
+//                 display: none;
+//             }
+//         }
+//     }
+
+//     li,
+//     a,
+//     span {
+//         white-space: normal;
+//         color: inherit;
+//         word-break: break-word; 
+//         font-family: $title-font;
+//         font-weight: 600;
+//         font-size: 18px;
+//         line-height: 14px;
+//         color: #DFE5F0;
+//     }
+// }
+
+// .breadcumb-title {
+//     margin: -0.20em 0 -0.18em 0;
+//     font-size: 48px;
+//     font-family: $title-font;
+//     color: $white-color;
+//     line-height: 1.1;
+//     font-weight: 700;
+// }
+
+// .breadcumb-wrapper {
+//     background-color: $title-color;
+//     background-position: bottom center;
+//     padding: 328px 0 153px 0;
+//     overflow: hidden;
+// }
+
+// @include lg {
+//     .breadcumb-wrapper {
+//         padding: 270px 0 130px 0;
+//     }
+
+//     .breadcumb-title {
+//         margin: -0.20em 0 -0.18em 0;
+//     }
+
+//     .breadcumb-menu {
+
+//         li,
+//         a,
+//         span {
+//             font-size: 16px;
+//             line-height: 26px; 
+//         }
+//     }
+// }
+
+
+// @include xs {
+//     .breadcumb-title {
+//         font-size: 34px;
+//     }
+// }

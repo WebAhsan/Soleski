@@ -1,0 +1,264 @@
+/*** Typography Code ***/
+
+html,
+body {
+	scroll-behavior: auto !important;
+}
+
+body {
+	font-family: $body-font;
+	font-size: $body-font-size;
+	font-weight: $body-font-weight;
+	color: $body-color;
+	line-height: $body-line-Height;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+iframe {
+	border: none;
+	width: 100%;
+}
+
+.slick-slide:focus,
+button:focus,
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	outline: none;
+}
+
+
+input:focus {
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+img:not([draggable]),
+embed,
+object,
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style-type: disc;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+li {
+	list-style-type: none;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th {
+	font-weight: 700;
+	color: $title-color;
+}
+
+td,
+th {
+
+	padding: 9px 12px;
+}
+
+
+a {
+	color: $title-color;
+	text-decoration: none;
+	outline: 0;
+	-webkit-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+
+	&:hover {
+		color: $title-color;
+	}
+
+	&:active,
+	&:focus,
+	&:hover,
+	&:visited {
+		text-decoration: none;
+		outline: 0;
+	}
+}
+
+
+button {
+	-webkit-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+	background: transparent;
+	border: none
+}
+
+img {
+	border: none;
+	max-width: 100%;
+}
+
+ins {
+	text-decoration: none;
+}
+
+pre {
+	font-family: $body-font;
+	background: #f5f5f5;
+	color: #666;
+	font-size: 14px;
+	margin: 20px 0;
+	overflow: auto;
+	padding: 20px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+span.ajax-loader:empty,
+p:empty {
+	display: none;
+}
+
+
+p {
+	font-family: $body-font;
+	color: $body-color;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 0px;
+
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+p a,
+span a {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+	font-family: $body-font;
+	color: $title-color;
+	text-transform: none;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+
+.h1,
+h1 {
+	font-size: 64px;
+	line-height: 64px;
+}
+
+.h2,
+h2 {
+	font-size: 48px;
+	line-height: 72px;
+}
+
+.h3,
+h3 {
+	font-size: 40px;
+	line-height: 60px;
+}
+
+.h4,
+h4 {
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.h5,
+h5 {
+
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.h6,
+h6 {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+@include lg {
+
+	.h1,
+	h1 {
+		font-size: 54px;
+		line-height: 54px;
+	}
+
+	.h2,
+	h2 {
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.h3,
+	h3 {
+		font-size: 32px;
+		line-height: 32px;
+	}
+}
+
+@include sm {
+
+	.h1,
+	h1 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	.h2,
+	h2 {
+		font-size: 38px;
+		line-height: 38px;
+	}
+
+	.h3,
+	h3 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+}

@@ -1,0 +1,52 @@
+.sol_marquee {
+    background: $green-color;
+    padding: 30px 0px;
+
+    .marquee_container {
+    animation: marquee 24s linear infinite;
+
+    white-space: nowrap;
+    gap: 50px;
+    h3 {
+        overflow: hidden;
+        color: $white;
+
+        &.stroke_text {
+            @include stroke-text(40px, 1px, $white);
+        }
+    }
+}
+
+
+}
+
+.sol_marquee-two{
+
+     background: linear-gradient(89.58deg, #FBE63E 3.42%, #9CEE69 99.86%);
+     
+.marquee_container {
+                animation: marquee 24s linear infinite;
+                white-space: nowrap;
+                gap: 50px;
+                h3 {
+
+                    @include stroke-text(60px, 1px, $black-color, $white);
+                    overflow: hidden;
+                    // color: $black-color;
+                    text-transform: uppercase;
+                    &.stroke_text {
+                        @include stroke-text(60px, 1px, $black-color);
+                    }
+                }
+            }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,115 @@
+/*** Animation Code ***/
+
+@-webkit-keyframes moveing-animation {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg);
+        transform: rotate(0deg) translateX(5px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg) translateX(5px) rotate(-360deg);
+        transform: rotate(360deg) translateX(5px) rotate(-360deg);
+    }
+}
+
+@keyframes moveing-animation {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg);
+        transform: rotate(0deg) translateX(5px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg) translateX(5px) rotate(-360deg);
+        transform: rotate(360deg) translateX(5px) rotate(-360deg);
+    }
+}
+
+.moving {
+    -webkit-animation: moveing-animation 5s linear infinite;
+    animation: moveing-animation 5s linear infinite;
+}
+
+@-webkit-keyframes clientLogoSlide-animation {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes clientLogoSlide-animation {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+.clientLogoSlide {
+    -webkit-animation: 10s clientLogoSlide-animation infinite linear;
+    animation: 10s clientLogoSlide-animation infinite linear;
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0
+    }
+
+    30% {
+        opacity: 0.4
+    }
+
+    100% {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0
+    }
+}
+
+@keyframes ripple {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0
+    }
+
+    30% {
+        opacity: 0.4
+    }
+
+    100% {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes headerSlideDown {
+    0% {
+        margin-top: -150px
+    }
+
+    100% {
+        margin-top: 0
+    }
+}
+
+@keyframes headerSlideDown {
+    0% {
+        margin-top: -150px
+    }
+
+    100% {
+        margin-top: 0
+    }
+}

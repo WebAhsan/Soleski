@@ -1,0 +1,158 @@
+/*** Button Code ***/
+
+.cs-btn {
+    @include button($theme-color2, $white-color, $theme-color);
+    position: relative;
+    overflow: hidden;
+    &:before{
+        content: "";
+        background: $title-color;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        transform: translateY(50px);
+        transition: all ease-in-out .4s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    i {
+        padding-left: 10px;
+    }
+    &:hover{
+        &:before{
+        transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+          border-color:$title-color;
+    }
+     span{
+        color: $white-color;
+        position: relative;
+        z-index: 9;
+    }
+}
+
+.cs-btn2 {
+    @include button($theme-color, $white-color, $theme-color);
+    position: relative;
+      overflow: hidden;
+    &:before{
+        content: "";
+        background: $title-color;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        transform: translateY(50px);
+        transition: all ease-in-out .4s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    i {
+        padding-left: 10px;
+    }
+        &:hover{
+            &:before{
+          transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+          border-color:$title-color;
+    }
+    span{
+        color: $white-color;
+        position: relative;
+        z-index: 9;
+    }
+}
+
+.cs-btn3 {
+    @include button($green-color, $white-color, $green-color);
+
+     position: relative;
+      overflow: hidden;
+    &:before{
+        content: "";
+        background: $white-color;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        transform: translateY(50px);
+        transition: all ease-in-out .4s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    i {
+        padding-left: 10px;
+    }
+        &:hover{
+            &:before{
+          transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+          border-color:$white-color;
+          span{
+        color: $title-color;
+    }
+    }
+    span{
+        color: $white-color;
+        position: relative;
+        z-index: 9;
+    }
+}
+
+.submit-btn {
+    @include button($green-color2, $white-color, $white-color);
+    display: block;
+     position: relative;
+      overflow: hidden;
+    &:before{
+        content: "";
+        background: $white-color;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        transform: translateY(50px);
+        transition: all ease-in-out .4s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    i {
+        padding-left: 10px;
+    }
+        &:hover{
+            &:before{
+          transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+          border-color:$white-color;
+          span{
+        color: $title-color;
+    }
+    }
+    span{
+        color: $white-color;
+        position: relative;
+        z-index: 9;
+    }
+}

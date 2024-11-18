@@ -1,0 +1,230 @@
+/*** Footer Code ***/
+
+.cs-footer-area {
+    background: $body-color2;
+
+    .footer-top {
+        padding: 80px 0px 30px 0px;
+
+        .widget-area {
+            margin-bottom: 50px;
+
+            .footer-title {
+                padding: 20px 0px 30px 0px;
+            }
+
+            .widget-social {
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 10px;
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+
+                        a {
+                            background: $white-color;
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            border-radius: 100px;
+                            display: inline-block;
+                            text-align: center;
+
+                            &:hover {
+                                background: $theme-color;
+                                color: $white-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .widget-menu {
+                margin-top: 32px;
+                li {
+                    padding-bottom: 15px;
+                    color: $gray-color3;
+                        &:hover{
+                            color:$theme-color !important;
+                        }
+                        a{
+                            &:hover{
+                            color:$theme-color !important;
+                        }
+                        }
+
+                    &:last-child {
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 30px;
+        border: 1px solid $gray-color4;
+        border-bottom: none;
+        border-radius: 20px 20px 0px 0px;
+
+        .copyright-text {
+            color: $title-color;
+            @include md{
+                padding-bottom: 10px;
+            }
+            a {
+                color: $theme-color;
+            }
+        }
+
+        .footer-menu {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: end;
+
+            @include md {
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+
+            ul {
+                li {
+                    display: inline-block;
+                    padding-right: 30px;
+
+                    &:last-child {
+                        padding-right: 0px
+                    }
+                        @include vxs{
+                            &:first-child {
+                                padding-right: 0px
+                            } 
+                    }
+                    a{  
+                        &:hover{
+                            color:$theme-color !important;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.layout2 {
+    background: $title-color;
+    padding-top: 80px;
+
+    .footer-top {
+        border-top: 1px solid $gray-color2 ;
+        border-bottom: 1px solid $gray-color2 ;
+        padding: 20px 0px;
+
+        @include xs {
+            text-align: center
+        }
+
+        .footer-social {
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    a {
+                        background: rgb(255, 255, 255, 9%);
+                        ;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        border-radius: 100px;
+                        display: inline-block;
+                        text-align: center;
+
+                        color: $white-color;
+
+                        &:hover {
+                            background: $theme-color;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+
+            @include xs {
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .footer-middle {
+        padding: 60px 0px 30px 0px;
+
+        .widget-area {
+            margin-bottom: 50px;
+
+            .footer-title {
+                color: $white-color;
+            }
+
+            .widget-title {
+                color: $white-color;
+            }
+
+            .widget-menu {
+                margin-top: 32px;
+                li {
+                    padding-bottom: 15px;
+                    color: $white-color !important;
+                        &:hover{
+                            color:$theme-color2 !important;
+                        }
+                        a{
+                            color:$white-color;
+                             &:hover{
+                            color:$theme-color2;
+                        }
+                        }
+                    &:last-child {
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+  
+
+
+    .footer-bottom {
+        padding: 30px;
+        border-top: 1px solid $black-color;
+        border-radius: 0px;
+
+
+        .copyright-text {
+            color: $white-color;
+        }
+
+        .footer-menu {
+            ul {
+                li {
+                    a {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}

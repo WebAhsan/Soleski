@@ -1,0 +1,117 @@
+:root {
+  --theme-color: rgba(82, 187, 48, 1);//
+  --theme-color2: rgba(255, 94, 21, 1);//
+  --title-color: rgba(6, 28, 61, 1);//
+  --white-color: #fff; //
+
+  --body-color: rgba(93, 107, 129, 1);//
+  --body-color2: rgba(6, 28, 61, 1); //
+  --green-color: #52BB30;//
+
+
+
+
+
+  --black-color: #000000;
+  --black-color2: #00061D;
+
+  --green-color2: rgb(255, 255, 255, 10%);
+  --button-color: #F01543;
+
+
+  --gray-color:  rgba(221, 221, 221, 1); //gray
+  --gray-color2: rgba(180, 180, 180, 1); ///
+
+
+
+  --gray-color3: #595959;
+  --gray-color4: rgb(14 23 48 / 20%);
+  --light-gray: #F9FAFB;
+  --light-gray2: rgb(40 40 40 / 20%);
+  --light-gray3: #F7F7F7;
+  --white-color: #ffffff;
+  --white-color2: rgb(254 254 254 / 20%);
+  --white-color3: rgb(255 255 255 / 20%);
+  --yellow-color: #FFBA08;
+  --yellow-color2: #FED700;
+  --gold-color: #AF8C3E;
+  --chocolate-color: #2D1B19;
+  --title-font: 'Unbounded', sans-serif;
+  --body-font: 'Outfit', 'sans-serif';
+  --icon-font: "Font Awesome 6 Pro";
+  --main-container: 1290px;
+  --container-gutters: 30px;
+  --section-space: 120px;
+  --section-space-mobile: 80px;
+  --section-title-space: 70px;
+  --ripple-ani-duration: 5s;
+}
+
+// Color Variation
+$theme-color : var(--theme-color);
+$theme-color2 : var(--theme-color2);
+$title-color : var(--title-color);
+$white : var(--white-color);
+$body-color : var(--body-color);
+$body-color2 : var(--body-color2);
+$white-color : var(--white-color);
+$white-color2 : var(--white-color2);
+$white-color3 : var(--white-color3);
+$black-color : var(--black-color);
+$black-color2 : var(--black-color2);
+$green-color : var(--green-color);
+$green-color2 : var(--green-color2);
+$gray-color : var(--gray-color);
+$gray-color2 : var(--gray-color2);
+$gray-color3 : var(--gray-color3);
+$gray-color4 : var(--gray-color4);
+$light-gray : var(--light-gray);
+$light-gray2 : var(--light-gray2);
+$light-gray3 : var(--light-gray3);
+$yellow-color : var(--yellow-color);
+$yellow-color2 : var(--yellow-color2);
+$gold-color : var(--gold-color);
+$chocolate-color : var(--chocolate-color);
+
+// Font Variation
+$icon-font : var(--icon-font);
+
+// Typography
+$title-font : var(--title-font);
+$body-font : var(--body-font);
+$body-font-size : 16px;
+$body-line-Height: 26px;
+$body-font-weight: 400;
+$p-line-Height : 1.75;
+
+// Device Variation
+$hd: 1921px; // Large Device Than 1920
+$xxxl: 1799px;
+$xxl: 1500px; // Extra large Device
+$ml: 1399px; // Medium Large Device
+$xl: 1299px; // Medium Large Device
+$lg: 1199px; // Large Device (Laptop)
+$md: 991px; // Medium Device (Tablet)
+$sm: 767px; // Small Device
+$xs: 575px; // Extra Small Device
+$vxs: 375px; // Extra Small Device
+
+// Spacing Count with 5x
+$space-count: 20;
+
+// Section Space  For large Device
+$space : var(--section-space);
+$space-extra : calc(var(--section-space) - 30px);
+$space-extra2 : calc(var(--section-space) - 40px);
+
+// Section Space On small Device
+$space-mobile : var(--section-space-mobile);
+$space-mobile-extra: calc(var(--section-space-mobile) - 30px);
+
+
+// // Font Mapping 
+$fontsMap : ();
+$fontsMap : map-merge(("icon" : $icon-font,
+    "title" : $title-font,
+    "body" : $body-font,
+  ), $fontsMap);

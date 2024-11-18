@@ -1,0 +1,61 @@
+/*** Title Code ***/
+
+.cs-content-area {
+    .content-subtitle {
+        font-family: $title-font;
+        font-size: 15px;
+        line-height: 26px;
+        color: $theme-color;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+    .content-title {
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    .content-text {
+        color: $gray-color3;
+        margin-bottom: 15px;
+
+        &:first-of-type {
+            margin-top: 30px;
+        }
+    }
+
+
+    .cs-btn2 {
+        margin-top: 35px;
+    }
+
+    .cs-btn3 {
+        margin-top: 35px;
+    }
+
+    .style2 {
+        color: $white-color;
+    }
+
+    .style2-title {
+        color: $white-color;
+        font-size: 60px;
+        line-height: 60px;
+
+        @include xl {
+            font-size: 50px;
+            line-height: 50px;
+        }
+
+        @include sm {
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+    }
+
+    .style2-btn {
+        background: $green-color;
+    }
+}

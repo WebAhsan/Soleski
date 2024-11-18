@@ -1,0 +1,99 @@
+.sol_work-step {
+    background: linear-gradient(114.34deg, #261301 0.51%, #0E1802 50.26%, #01021A 100%);
+    position: relative;
+
+    &::after {
+        content: "";
+        background: url('/assets/img/work-step/overlay.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+
+    }
+
+    // .work_step-img{
+    //     margin-bottom: -88px;
+    // }
+
+    .work_feature-boxs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 24px;
+        position: relative;
+        z-index: 999;
+
+        .feature_box {
+    
+            transition: .3s all ease-in-out;
+            border-radius: 40px;
+            &.style_two{
+                &:hover {
+                border: 1px solid $theme-color2;
+            }
+            }
+
+            &.default {
+                border: 1px solid #9CEE69;
+      
+            }
+
+            &:hover {
+                
+                border: 1px solid #9CEE69;
+                transition: .3s all ease-in-out;
+            }
+
+            .feature_num {
+
+                width: 80px;
+                height: 80px;
+                border: 1px dashed #9CEE69;
+                border-radius: 100px;
+
+                a {
+                    background: linear-gradient(89.58deg, #FBE63E 3.42%, #9CEE69 99.86%);
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100px;
+                    color: $black-color;
+                    font-size: 32px;
+                    font-weight: 500;
+                    text-align: center;
+                    line-height: 70px;
+                    display: block;
+                    margin-left: 4px;
+                    margin-top: 4px;
+
+                }
+
+                
+                &.style_two{
+
+                    border-color:$theme-color2;
+                        a{
+                            background:   $theme-color2;
+                            color:$white;
+                        }
+                }
+            }
+
+
+            .feature_title {
+                h5 {
+                    color: $white;
+                }
+            }
+
+            .feature_des {
+                p {
+                    color: $gray-color2;
+                }
+            }
+        }
+
+
+    }
+}

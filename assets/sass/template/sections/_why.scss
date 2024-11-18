@@ -1,0 +1,67 @@
+.sol_why-us{
+    background: linear-gradient(229.62deg, #122403 0.46%, #061C3D 100%);
+    .why_us-content{
+        h1{
+            color:$white;
+            font-family: $title-font;
+            font-size: 80px;
+            line-height: 120px;
+            font-weight: 700;
+            text-transform: uppercase;
+            span{
+                margin-right: 15px;
+            }
+
+            &.style_two{
+                background: linear-gradient(89.58deg, #FBE63E 3.42%, #9CEE69 99.86%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-transform: capitalize;
+            }
+        }
+        .why_us-par{
+          p{
+              color: $white;
+            font-size:24px ;
+            line-height:36px ;
+            font-weight: 300;
+          }
+        }
+
+        .why_us-feaures{
+            .feature_box{
+                gap: 60px;
+                .feature_img{
+                       width: 30%;
+                    img{
+                     width: 100% !important;
+                    }
+                }
+                .feature_content{
+                    width: 60%;
+                    h3{
+                        color: $white;
+                        font-family: $title-font;
+                        font-weight: 400;
+                        &:hover{
+                            background: linear-gradient(89.58deg, #FBE63E 3.42%, #9CEE69 99.86%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            text-transform: capitalize;
+                        }
+
+                        &.style_two{
+                            background: linear-gradient(89.58deg, #FBE63E 3.42%, #9CEE69 99.86%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            text-transform: capitalize;
+                        }
+                    }
+                    p{
+                          color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

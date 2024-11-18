@@ -1,0 +1,44 @@
+.sol_service_area{
+    background: url('../img/service/services.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sol_service-box{
+
+    background: url('../img/service/service-box/service-box-bg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    .service_img{
+        img{
+            width: 100%;
+        }
+    }
+    .service_title{
+        gap:20px;
+        border-bottom: 1px solid $gray-color;
+        .h4{
+            font-family: $body-font;
+        }
+    }
+    .service_rm-btn{
+        float: right;
+            margin-top: -37px;
+    margin-right: -20px;
+        a{
+            background: $body-color2;
+            color: $white;
+            width: 50px;
+            height: 50px;
+            border-radius:100px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+            font-size: 25px;
+            &:hover{
+                background: $theme-color2;
+            }
+        }
+    }
+}

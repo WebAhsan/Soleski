@@ -1,0 +1,33 @@
+/*** Background Code ***/
+
+.gr-bg1 {
+    background: -o-linear-gradient(45deg, rgb(63 33 25 / 0%) 10%, rgb(215 35 0 / 31%) 140%);
+    background: linear-gradient(45deg, rgb(63 33 25 / 0%) 10%, rgb(215 35 0 / 31%) 140%);
+}
+
+.gr-bg2 {
+    background: -o-linear-gradient(320deg, rgb(215 35 0 / 31%) 0%, rgb(122 34 15 / 9%) 54%, rgb(63 33 35 / 25%) 100%);
+    background: linear-gradient(130deg, rgb(215 35 0 / 31%) 0%, rgb(122 34 15 / 9%) 54%, rgb(63 33 35 / 25%) 100%);
+}
+
+.gr-bg3 {
+    background: -o-linear-gradient(230deg, rgb(63 33 25 / 6%) 0%, rgb(215 35 0 / 31%) 100%);
+    background: linear-gradient(220deg, rgb(63 33 25 / 6%) 0%, rgb(215 35 0 / 31%) 100%);
+}
+
+.gr-bg4 {
+    background: -o-linear-gradient(230deg, rgb(215 35 0 / 31%) 0%, rgb(63 33 25 / 6%) 100%);
+    background: linear-gradient(220deg, rgb(215 35 0 / 31%) 0%, rgb(63 33 25 / 6%) 100%);
+}
+
+.gr-bg5 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0 131 62)), to(rgb(0 29 14)));
+    background: -o-linear-gradient(top, rgb(0 131 62) 0%, rgb(0 29 14) 100%);
+    background: linear-gradient(180deg, rgb(0 131 62) 0%, rgb(0 29 14) 100%);
+}
+
+.gr-bg6 {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, rgb(211 0 0)), color-stop(39%, rgb(126 0 0)), color-stop(70%, rgb(109 0 0 / 0%)));
+    background: -o-linear-gradient(top, rgb(211 0 0) 3%, rgb(126 0 0) 39%, rgb(109 0 0 / 0%) 70%);
+    background: linear-gradient(180deg, rgb(211 0 0) 3%, rgb(126 0 0) 39%, rgb(109 0 0 / 0%) 70%);
+}

@@ -1,0 +1,62 @@
+.sol_about-us{
+    background: linear-gradient(360deg, rgba(251, 230, 62, 0.0873) 0%, rgba(251, 230, 62, 0.09) 100%);
+    position: relative;
+    &::after{
+        content:"";
+        background: url('/assets/img/about/about-overlay.png');
+       
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -160px;
+        width: 100%;
+        height: 100%;
+      
+    }
+    .sol_about-content{
+        z-index: 9;
+    }
+    p{
+        color:$body-color2;
+    }
+
+    .about_exp-img{
+        position: relative;
+        .about_exp-yr{
+            background: $white;
+            width: 205px;
+            height: 185px;
+            border-radius: 20px;
+            position: absolute;
+            top: -5%;
+            left: -5%;
+
+            .exp_yr{
+                 @include stroke-text();
+                 margin-bottom: 12px;
+            }
+        }
+    }
+    .about_feature-items{
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 48px 20px; 
+    .feature_item-box{
+        gap:15px;
+    }
+    }
+
+    .about_mission{
+        gap:40px;
+        .about_mission-title{
+            width: 35%;
+            font-weight: 500;
+        }
+        .about_mission-content {
+            width: 65%;
+            float: right;
+        }
+    }
+
+
+}
